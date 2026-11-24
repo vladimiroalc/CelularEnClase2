@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clase sin celular</title>
+<style>
+:root {
+  --fondo: #ffffff; --texto: #1a1a2e; --azul: #1d4ed8; --suave: #eef2ff; --sobre-azul: #ffffff;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --fondo: #111827; --texto: #f3f4f6; --azul: #93c5fd; --suave: #1f2937; --sobre-azul: #111827; }
+}
+:root[data-theme="dark"] { --fondo: #111827; --texto: #f3f4f6; --azul: #93c5fd; --suave: #1f2937; --sobre-azul: #111827; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+header { background: var(--azul); color: var(--sobre-azul); padding: 48px 20px; text-align: center; }
+header h1 { margin: 0 0 12px; font-size: 2rem; }
+header p { margin: 0 auto; max-width: 600px; }
+main { max-width: 700px; margin: 0 auto; padding: 20px; }
+h2 { color: var(--azul); margin-top: 40px; }
+.tarjeta { background: var(--suave); border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; }
+.tarjeta h3 { margin: 0 0 4px; }
+.tarjeta p { margin: 0; }
+footer { text-align: center; font-size: .85rem; padding: 24px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Clase sin celular</h1>
+  <p>Por qué guardar el celular en clase nos ayuda a aprender mejor.</p>
+</header>
+
+<main>
+  <h2>Cómo afecta el celular en el salón</h2>
+  <div class="tarjeta"><h3>Nos distrae</h3><p>Una notificación nos saca de la explicación y cuesta volver a concentrarse.</p></div>
+  <div class="tarjeta"><h3>Baja las calificaciones</h3><p>Un estudio de la London School of Economics (2015) encontró mejores resultados en escuelas que prohibieron los celulares.</p></div>
+  <div class="tarjeta"><h3>Nos aísla</h3><p>Con la cabeza en la pantalla hablamos menos con compañeros y maestros.</p></div>
+  <div class="tarjeta"><h3>Genera problemas</h3><p>Puede facilitar copiar en exámenes y causar conflictos por redes sociales.</p></div>
+
+  <h2>Lo que dice la UNESCO</h2>
+  <p>En 2023, la UNESCO recomendó limitar el uso de teléfonos en las escuelas porque su uso excesivo se relaciona con menor rendimiento escolar.</p>
+
+  <h2>¿Qué podemos hacer?</h2>
+  <ul>
+    <li>Guardar el celular en la mochila durante la clase.</li>
+    <li>Usarlo solo cuando el maestro lo pida para una actividad.</li>
+    <li>Revisar mensajes en el recreo.</li>
+  </ul>
+</main>
+
+<footer>Fuentes: UNESCO, Informe GEM 2023; Beland y Murphy, London School of Economics, 2015.</footer>
+</body>
+</html>
